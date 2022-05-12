@@ -1,0 +1,117 @@
+:root {
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+
+    --negro: rgb(0, 0, 0);
+    --gris: rgb(41, 41, 41);
+    --blanco: rgb(255, 255, 255);
+    --rojo: rgb(185, 0, 0);
+    --verde: rgb(74, 185, 0);
+}
+html {
+    box-sizing:border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: var(--fuenteParrafos);
+    /*background-color: var(--gris);*/
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(41,41,41,1) 50%, rgba(0,0,0,1) 100%);
+    font-size: 1.6rem;
+    line-height: 2;
+} 
+
+/** GLOBALES **/
+.contenedor {
+    width: min(60%, 120rem);
+    margin: 0 auto;
+}
+
+h3{
+    font-family: var(--fuenteHeading);
+    line-height: 1.2;
+    font-size: 3.2rem;
+}
+
+/** UTILIDADES **/
+.centrar-texto {
+    text-align: center;
+}
+
+/** CAMPOS LOGIN **/
+.formulario {
+    background-color: var(--blanco);
+    margin: 10rem auto 0 auto;
+    width: 80%;
+    padding: 5rem;
+}
+.campo {
+    display: flex;
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+.campo__label {
+    flex: 0 0 15rem;
+    text-align: right;
+    padding-right: 4rem;
+}
+.campo__field {
+    flex: 1;
+    border: 1px solid var(--gris);
+}
+
+/** BOTON ENVIAR **/
+.boton {
+    display: block;
+    font-family: var(--fuenteHeading);
+    color: var(--blanco);
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    border: none;
+}
+@media (min-width: 768px) {
+    .boton {
+        display: inline-block;
+    }
+}
+.boton:hover {
+    cursor: pointer;
+}
+.boton--primario {
+    background-color: var(--negro);
+}
+
+/** MENSAJE **/
+.error {
+    background-color: var(--rojo);
+    text-align: center;
+    padding: 1rem;
+    color: var(--blanco);
+    text-transform: uppercase;
+}
+.correcto {
+    background-color: var(--verde);
+    text-align: center;
+    padding: 1rem;
+    color: var(--blanco);
+    text-transform: uppercase;
+}
+
+/** FOOTER **/
+.copy {
+    text-align: center;
+    font-size: 1.3rem;
+    color: var(--blanco);
+    margin-top: 2rem;
+}
+
+.copy a {
+    color: var(--blanco);
+}
