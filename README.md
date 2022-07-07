@@ -1,5 +1,5 @@
-# JS_Login_v1
-Simulación de Login con validación realizado en HTML, CSS y JavaScript
+# Codo a Codo Login Frontend
+Simulación de Login con validación realizado en HTML, CSS y JavaScript del módulo Frontend para el curso Codo a Codo Java Full Stack 2022.
 
 *user: admin<br>
 pass: admin*
